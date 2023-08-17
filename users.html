@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyProject</title>
+    <link rel="stylesheet" href="/src/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/src/css/util.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
+
 <body>
-    
+    <!-- navbar section ______________________start -->
+    <nav class="blue z-depth-5 top_navbar">
+        <div class="nav-wrapper">
+            <a href="#!" class="black-text hide-on-med-and-up">Users manager</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i
+                    class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down">
+                <li><a href="#!">HOME</a></li>
+                <li><a href="users.html">User management</a></li>
+                <li><a href="#!">Javascript</a></li>
+                <li><a href="#!">AQ fast learn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="/src/images/winter.png.jpeg" class="w-full">
+                </div>
+                <a href="#user"><img class="circle" src="/src/images/codeyad.png"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">example@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">insert_link</i>First Link With Icon</a></li>
+        <li><a href="#!"><i class="material-icons">insert_link</i>Second Link With Icon</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">pages</a></li>
+        <li><a class="waves-effect" href="#!">Home</a></li>
+        <li><a class="waves-effect" href="/users.html">Users</a></li>
+    </ul>
+    <!-- navbar section ______________________end -->
+
+    <!-- content section ______________________start -->
+    <section id="top_actions_section" class="row m-b-0 container">
+        <!-- add button -->
+        <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
+            <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
+                <i class="material-icons m-r-5">add</i>
+                add user
+            </button>
+        </div>
+        <!-- search section -->
+        <div class="row col s12 m9 l8 m-b-0">
+            <div class="input-field col s12">
+                <input id="search" type="text" class="validate">
+                <label for="search">
+                    <i class="material-icons pos-relative top-7">search</i>
+                    search
+                </label>
+            </div>
+        </div>
+        <div class="col l2 hide-on-med-and-down"></div> <!-- 7 -->
+    </section>
+
+    <section class="user_list_section">
+        <ul class="collapsible hide-on-med-and-up">
+            <li class="Users_list_item">
+                <div class="collapsible-header">
+                    <i class="material-icons blue-grey-text trans-0-2">arrow_drop_down_circle</i>
+                    mohammad amin
+                </div>
+                <div class="collapsible-body">
+                    <div class="p-all-5">
+                        <span class="f-bold">Username</span>
+                        <span class="">mohammad amin</span>
+                    </div>
+                    <div class="p-all-5">
+                        <span class="f-bold">Email : </span>
+                        <span class="">example@gmail.com</span>
+                    </div>
+                    <div class="p-all-5">
+                        <span class="f-bold">Address</span>
+                        <span class="">Example address</span>
+                    </div>
+                    <div class="p-all-5">
+                        <span class="f-bold">Action</span>
+                        <i class="material-icons red-text m-l-5 m-r-5">delete_forever</i>
+                        <i class="material-icons orange-text m-l-5 m-r-5">edit</i>
+                    </div>
+                </div>
+            </li>
+            <li class="Users_list_item">
+                <div class="collapsible-header">
+                    <i class="material-icons blue-grey-text trans-0-2">arrow_drop_down_circle</i>
+                    mohammad amin
+                </div>
+                <div class="collapsible-body">
+                    <div class="p-all-5">
+                        <span class="f-bold">Username</span>
+                        <span class="">mohammad amin</span>
+                    </div>
+                    <div class="p-all-5">
+                        <span class="f-bold">Email : </span>
+                        <span class="">example@gmail.com</span>
+                    </div>
+                    <div class="p-all-5">
+                        <span class="f-bold">Address</span>
+                        <span class="">Example address</span>
+                    </div>
+                    <div class="p-all-5">
+                        <span class="f-bold">Action</span>
+                        <i class="material-icons red-text m-l-5 m-r-5">delete_forever</i>
+                        <i class="material-icons orange-text m-l-5 m-r-5">edit</i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="hide-on-med-and-down show-on-medium-and-up container">
+            <table class="striped center highlight">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Adrress</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>mohammad amin</td>
+                        <td>mohammad amin</td>
+                        <td>exaple@gmail.com</td>
+                        <td>exaple address</td>
+                        <td>
+                            <i class="material-icons orange-text m-l-5 m-r-5 hov-pointer">edit</i>
+                            <i class="material-icons orange-text m-l-5 m-r-5 hov-pointer">delete_forever</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mohammad amin</td>
+                        <td>mohammad amin</td>
+                        <td>exaple@gmail.com</td>
+                        <td>exaple address</td>
+                        <td>
+                            <i class="material-icons orange-text m-l-5 m-r-5 hov-pointer">edit</i>
+                            <i class="material-icons orange-text m-l-5 m-r-5 hov-pointer">delete_forever</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>mohammad amin</td>
+                        <td>mohammad amin</td>
+                        <td>exaple@gmail.com</td>
+                        <td>exaple address</td>
+                        <td>
+                            <i class="material-icons orange-text m-l-5 m-r-5 hov-pointer">edit</i>
+                            <i class="material-icons orange-text m-l-5 m-r-5 hov-pointer">delete_forever</i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination container p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30">
+            <div class="pagination_item_counts flex-l p-l-10 flex-l-m">
+                showing
+                <span class="m-l-5 m-r-5 max-w-50">
+                    <input type="number" class="blue-text no-border center-align m-b-0" value="10">
+                </span>
+                of
+                <span class="blue-text m-l-5 m-r-5">100</span>
+            </div>
+            <div class="pgination_buttons">
+                <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_left</i>
+                <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-right white-text rounded_pill">keyboard_arrow_right</i>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- content section ______________________end -->
+    <script src="/src/materialize/js/materialize.min.js"></script>
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/users.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,34 @@
-.w_100{
-    width: 100% !important;
+@media(min-with:600px){
+    .top_navbar{
+        box-shadow: 0 0 50px gray !important;
+    }
+
+    #top_actions_section{
+        display: flex !important;
+        align-items: center !important;
+    }
 }
 
-.rounded_pill{
-    border-radius: 5rem;
+.Users_list_item .user_list_arrow_icon{
+    transition: all 300ms ease;
+}
+
+.Users_list_item.active .user_list_arrow_icon{
+    transform: rotate(180deg);
+}
+
+.Users_list_item.active , .Users_list_item.active .collapsible-header{
+    background-color: aqua;
+}
+
+table.highlight > tbody > tr:hover{
+    background-color: cadetblue;
+}
+
+.rounded_top_30{
+    border-radius: 30px 30px 0 0 !important;
+}
+
+.container{
+    width: 100% !important;
 }
